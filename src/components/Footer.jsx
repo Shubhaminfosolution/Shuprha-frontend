@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Twitter, Linkedin, Instagram, Github, ArrowUpRight } from 'lucide-react'
+const logo="/logo.png";
 
 const footerLinks = {
   Company: ['About', 'Careers', 'Blog', 'Press'],
@@ -21,13 +22,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-16">
           <div className="col-span-2">
-            <a href="#home" className="flex items-center gap-2 mb-6">
-              <span className="text-3xl font-bold tracking-tight">
-                <span className="text-accent">S</span>HUPRHA
-              </span>
-            </a>
+             <div className='logo-container footer'>
+          <img className='logo' src={logo}/>
+        </div>
             <p className="text-muted-foreground mb-6 max-w-xs leading-relaxed">
-              Transforming brands through innovative digital marketing strategies since 2018. Think Digital, Think Shuprha.
+              Transforming brands through innovative digital marketing strategies since 2026. Think Digital, Think Shuprha.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (

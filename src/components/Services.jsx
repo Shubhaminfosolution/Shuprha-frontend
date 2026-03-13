@@ -4,7 +4,7 @@ import { TrendingUp, Palette, Share2, Search, Video, Globe, ArrowUpRight } from 
 const services = [
   {
     icon: TrendingUp,
-    title: 'Digital Marketing',
+    title: 'Advertisements',
     description: 'Data-driven campaigns that deliver measurable results. We optimize every touchpoint in your customer journey.',
     features: ['PPC Advertising', 'Email Marketing', 'Analytics & Reporting'],
     color: 'from-blue-500/20 to-cyan-500/10',
@@ -25,14 +25,14 @@ const services = [
   },
   {
     icon: Search,
-    title: 'SEO Optimization',
-    description: 'Dominate search rankings with our proven SEO strategies. Drive organic traffic that converts.',
+    title: 'CRM',
+    description: 'Dominate analytical strategies with our CRM. Drive organic traffic that converts.',
     features: ['Technical SEO', 'Content Strategy', 'Link Building'],
     color: 'from-emerald-500/20 to-green-500/10',
   },
   {
     icon: Video,
-    title: 'Video Production',
+    title: 'Product Videos',
     description: 'Captivate your audience with stunning video content. From concept to final cut, we handle it all.',
     features: ['Commercial Ads', 'Social Media Videos', 'Animation'],
     color: 'from-orange-500/20 to-amber-500/10',

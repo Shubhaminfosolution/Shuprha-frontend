@@ -59,3 +59,26 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
 }
+.logo-container{
+  margin-left:-90px ;
+  height: 80px;
+  display: flex;
+  align-items: center;
+    
+
+  
+}
+
+.logo-container img{
+  height: 250%;
+  width: auto;
+  
+}
+
+.footer{
+  margin-top: -40px;
+   margin-left:-90px ;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}

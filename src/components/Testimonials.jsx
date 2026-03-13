@@ -3,27 +3,27 @@ import { Star, Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Sarah Mitchell',
-    role: 'CEO',
-    company: 'TechVenture Inc.',
+    name: '.',
+    role: '.',
+    company: '...',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face',
-    content: 'Elevate transformed our digital presence completely. Our conversion rates increased by 340% within the first quarter. Their team is incredibly responsive and strategic.',
+    content: 'We’re building tools designed to help startups and modern teams grow faster and smarter.',
     rating: 5,
   },
   {
-    name: 'James Rodriguez',
-    role: 'Marketing Director',
-    company: 'GlobalRetail',
+    name: '.',
+    role: '.',
+    company: '...',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
-    content: 'The ROI we\'ve seen from working with Elevate has been phenomenal. They don\'t just execute; they think strategically about our long-term growth.',
+    content: 'We understand the challenges of building and scaling products.',
     rating: 5,
   },
   {
-    name: 'Emily Chen',
-    role: 'Founder',
-    company: 'Startup Labs',
+    name: '.',
+    role: '.',
+    company: '...',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
-    content: 'As a startup, we needed a partner who understood our constraints and ambitions. Elevate delivered beyond our expectations on every single campaign.',
+    content: 'Built for early-stage companies.',
     rating: 5,
   },
 ]
@@ -61,15 +61,13 @@ export default function Testimonials() {
           className="text-center mb-20"
         >
           <span className="text-accent text-sm font-semibold tracking-wider uppercase mb-4 block">
-            Testimonials
-          </span>
+Why us          </span>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-balance">
             Loved by{' '}
             <span className="gradient-text">Industry Leaders</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Don't just take our word for it. Here's what our clients have to say about 
-            their experience working with us.
+           Discover what makes our platform the right choice for modern teams.
           </p>
         </motion.div>
 

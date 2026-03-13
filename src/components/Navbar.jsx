@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+const logo="/logo.png";
 
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Services', href: '#services' },
   { name: 'About', href: '#about' },
-  { name: 'Testimonials', href: '#testimonials' },
+  { name: 'Why Us', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
 ]
 
@@ -32,12 +33,11 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2">
-          <span className="text-2xl font-bold tracking-tight">
-            <span className="text-accent">S</span>HUPRHA
-          </span>
-        </a>
+        <div className='logo-container'>
 
+          <img className='logo' src={logo}/>
+        </div>
+       
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a

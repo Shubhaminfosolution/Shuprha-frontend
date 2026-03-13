@@ -70,7 +70,7 @@ export default function Hero() {
               <span className="w-12 h-12 rounded-full border border-border flex items-center justify-center group-hover:border-accent group-hover:bg-accent/10 transition-all">
                 <Play className="w-5 h-5 ml-0.5" />
               </span>
-              <span className="font-medium">Watch Our Story</span>
+              <span className="font-medium"></span>
             </button>
           </motion.div>
 
