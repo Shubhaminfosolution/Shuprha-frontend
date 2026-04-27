@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
+import ServicesPage from './pages/ServicesPage'
+import about from './pages/About'
+import WhyUs from './pages/WhyUs'
+import ContactButton from './pages/Contactbutton'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -17,8 +20,7 @@ import Cookies from './pages/Cookies'
 import Businesses from './pages/businesses'
 import ScrollToTop from './components/ScrollToTop'
 
-
-// ✅ Home Page Component (your original UI)
+// ✅ Home Page Component
 const Home = () => {
   return (
     <main>
@@ -38,25 +40,33 @@ function App() {
         <Navbar />
 
         <Routes>
-          {/* ✅ Homepage */}
           <Route path="/" element={<Home />} />
-
-          {/* ✅ Businesses Page */}
           <Route path="/businesses" element={<Businesses />} />
-
-
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
-<Route path="/branding" element={<Branding />} />
-<Route path="/social-media" element={<SocialMedia />} />
-<Route path="/SEO" element={<SEO />} />
-<Route path="/privacy-policy" element={<PrivacyPolicy />} />
-<Route path="/terms-of-service" element={<Terms />} />
-<Route path="/cookie-policy" element={<Cookies />} />
-
+          <Route path="/branding" element={<Branding />} />
+          <Route path="/social-media" element={<SocialMedia />} />
+          <Route path="/SEO" element={<SEO />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<Terms />} />
+          <Route path="/cookie-policy" element={<Cookies />} />
+          <Route path="/Contact" element={<ContactButton />} />
+          <Route path="/Services" element={<ServicesPage />} />
+<Route path="/About" element={<About />} />
+<Route path="/why-us" element={<WhyUs />} />
         </Routes>
-        
-  <ScrollToTop /> {/* ✅ ADD THIS */}
 
+        <ScrollToTop />
+        <div className="min-h-screen flex flex-col bg-background text-foreground">
+  <Navbar />
+
+  <div className="flex-1 pb-20">   {/* 👈 ADD THIS */}
+    <Routes>
+      ...
+    </Routes>
+  </div>
+
+  <Footer />
+</div>
         <Footer />
       </div>
     </Router>

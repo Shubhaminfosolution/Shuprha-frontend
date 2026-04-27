@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 🎨 Enhanced Accent Colors */
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-premium {
+  background: radial-gradient(circle at top, rgba(59,130,246,0.15), transparent 60%);
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 40px rgba(59,130,246,0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
