@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { TrendingUp, Palette, Share2, Search, Video, Globe, ArrowUpRight } from 'lucide-react'
 
+
 const services = [
   {
     icon: TrendingUp,
@@ -160,3 +161,4 @@ export default function Services() {
     </section>
   )
 }
+
