@@ -112,7 +112,7 @@ function ContactSection() {
                   </p>
 
                   <p className="font-medium">
-                    premwaghmare88560@gmail.com
+                    shuprha1327@gmail.com
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ function ContactSection() {
                   </p>
 
                   <p className="font-medium">
-                    +91 8856076018
+                    +91 8149826504
                   </p>
                 </div>
               </div>

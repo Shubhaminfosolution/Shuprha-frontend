@@ -115,7 +115,8 @@ const Businesses = () => {
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
 
       logo:
-      "https://cdn-icons-png.flaticon.com/512/3135/3135789.png",
+        "https://cdn-icons-png.flaticon.com/512/3135/3135789.png",
+
       shortInfo:
         "Safe and affordable housing solutions designed specially for women with comfort and security.",
 
@@ -126,6 +127,64 @@ const Businesses = () => {
       ],
 
       profileLink: "/business/her-highnest",
+    },
+
+
+    /* --------------------------------
+       NEW BUSINESS — OSENTIA REALTY
+    -------------------------------- */
+
+    {
+      id: "osentia-realty",
+      name: "Osentia Realty",
+      category: "Real Estate",
+
+      image:
+        "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop",
+
+      logo:
+        "https://cdn-icons-png.flaticon.com/512/69/69524.png",
+
+      shortInfo:
+        "Real estate solutions focused on helping individuals and businesses explore residential and commercial property opportunities.",
+
+      services: [
+        "Property Consulting",
+        "Residential Real Estate",
+        "Commercial Real Estate",
+        "Property Solutions",
+      ],
+
+      profileLink: "/business/osentia-realty",
+    },
+
+
+    /* --------------------------------
+       NEW BUSINESS — FIXI SECURITY
+    -------------------------------- */
+
+    {
+      id: "fixi-security",
+      name: "Fixi Security",
+      category: "Cyber Security",
+
+      image:
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop",
+
+      logo:
+        "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+
+      shortInfo:
+        "Cybersecurity solutions focused on protecting digital systems, sensitive information and online environments from security threats.",
+
+      services: [
+        "Cyber Security",
+        "Threat Protection",
+        "Data Security",
+        "Security Solutions",
+      ],
+
+      profileLink: "/business/fixi-security",
     },
 
   ];
@@ -152,9 +211,9 @@ const Businesses = () => {
             <div>
 
               <motion.h1
-                initial={{ opacity:0,y:40 }}
-                animate={{ opacity:1,y:0 }}
-                transition={{ duration:0.7 }}
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
                 className="text-[58px] md:text-[110px] leading-[0.92] tracking-tight font-semibold max-w-5xl"
               >
                 Businesses we’ve helped grow.
@@ -166,9 +225,9 @@ const Businesses = () => {
             <div className="flex justify-end">
 
               <motion.p
-                initial={{ opacity:0,y:30 }}
-                animate={{ opacity:1,y:0 }}
-                transition={{ delay:0.2 }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
                 className="text-white/55 text-lg leading-relaxed max-w-md"
               >
                 Premium branding, modern websites and digital experiences
@@ -192,113 +251,111 @@ const Businesses = () => {
         <div className="max-w-[1600px] mx-auto space-y-36 md:space-y-52">
 
 
-        {businesses.map((business,index)=>(
+          {businesses.map((business, index) => (
+
+            <motion.div
+              key={business.id}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+              className={`grid lg:grid-cols-2 gap-10 lg:gap-24 items-center group ${
+                index % 2 !== 0
+                  ? "lg:[&>*:first-child]:order-2"
+                  : ""
+              }`}
+            >
 
 
-          <motion.div
-            key={business.id}
-            initial={{opacity:0,y:60}}
-            whileInView={{opacity:1,y:0}}
-            transition={{duration:0.7}}
-            viewport={{once:true}}
-            className={`grid lg:grid-cols-2 gap-10 lg:gap-24 items-center group ${
-              index % 2 !== 0
-              ? "lg:[&>*:first-child]:order-2"
-              : ""
-            }`}
-          >
+              {/* IMAGE */}
 
-
-            {/* IMAGE */}
-
-            <div className="overflow-hidden rounded-[30px] border border-white/10 bg-zinc-900 relative">
-
-              <img
-                src={business.image}
-                alt={business.name}
-                className="w-full h-[420px] md:h-[760px] object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-
-              <div className="absolute inset-0 bg-black/20"/>
-
-            </div>
-
-
-
-            {/* CONTENT */}
-
-            <div className="flex flex-col justify-center px-2 md:px-8">
-
-
-              <div className="w-24 h-24 rounded-3xl bg-white flex items-center justify-center mb-10 overflow-hidden">
+              <div className="overflow-hidden rounded-[30px] border border-white/10 bg-zinc-900 relative">
 
                 <img
-                  src={business.logo}
+                  src={business.image}
                   alt={business.name}
-                  className="w-14 h-14 object-contain"
+                  className="w-full h-[420px] md:h-[760px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
 
-              </div>
-
-
-              <p className="uppercase text-white/35 tracking-[0.35em] text-xs mb-7">
-                {business.category}
-              </p>
-
-
-              <h2 className="text-5xl md:text-7xl leading-[0.95] font-semibold tracking-tight mb-8">
-                {business.name}
-              </h2>
-
-
-              <p className="text-white/60 text-lg leading-relaxed max-w-xl mb-10">
-                {business.shortInfo}
-              </p>
-
-
-
-              <div className="flex flex-wrap gap-4 mb-12">
-
-                {business.services.map((service,idx)=>(
-
-                  <div
-                    key={idx}
-                    className="px-5 py-2 rounded-full border border-white/10 text-sm text-white/70 bg-white/[0.03]"
-                  >
-                    {service}
-                  </div>
-
-                ))}
+                <div className="absolute inset-0 bg-black/20" />
 
               </div>
 
 
 
-              <Link
-                to={business.profileLink}
-                className="group flex items-center gap-4 text-sm uppercase tracking-[0.3em] text-white/75 hover:text-white transition-all duration-300 w-fit"
-              >
+              {/* CONTENT */}
 
-                <span>
-                  View Profile
-                </span>
+              <div className="flex flex-col justify-center px-2 md:px-8">
 
 
-                <ArrowUpRight
-                  size={20}
-                  className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300"
-                />
+                <div className="w-24 h-24 rounded-3xl bg-white flex items-center justify-center mb-10 overflow-hidden">
 
-              </Link>
+                  <img
+                    src={business.logo}
+                    alt={business.name}
+                    className="w-14 h-14 object-contain"
+                  />
 
-
-            </div>
-
-
-          </motion.div>
+                </div>
 
 
-        ))}
+                <p className="uppercase text-white/35 tracking-[0.35em] text-xs mb-7">
+                  {business.category}
+                </p>
+
+
+                <h2 className="text-5xl md:text-7xl leading-[0.95] font-semibold tracking-tight mb-8">
+                  {business.name}
+                </h2>
+
+
+                <p className="text-white/60 text-lg leading-relaxed max-w-xl mb-10">
+                  {business.shortInfo}
+                </p>
+
+
+
+                <div className="flex flex-wrap gap-4 mb-12">
+
+                  {business.services.map((service, idx) => (
+
+                    <div
+                      key={idx}
+                      className="px-5 py-2 rounded-full border border-white/10 text-sm text-white/70 bg-white/[0.03]"
+                    >
+                      {service}
+                    </div>
+
+                  ))}
+
+                </div>
+
+
+
+                <Link
+                  to={business.profileLink}
+                  className="group flex items-center gap-4 text-sm uppercase tracking-[0.3em] text-white/75 hover:text-white transition-all duration-300 w-fit"
+                >
+
+                  <span>
+                    View Profile
+                  </span>
+
+
+                  <ArrowUpRight
+                    size={20}
+                    className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300"
+                  />
+
+                </Link>
+
+
+              </div>
+
+
+            </motion.div>
+
+          ))}
 
 
         </div>
@@ -324,7 +381,6 @@ const Businesses = () => {
             <h3 className="text-5xl md:text-8xl leading-[0.95] font-semibold tracking-tight max-w-5xl">
               Let’s build something unforgettable.
             </h3>
-
 
           </div>
 

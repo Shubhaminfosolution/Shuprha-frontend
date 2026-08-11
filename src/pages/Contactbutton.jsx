@@ -195,14 +195,14 @@ function ContactOverlay({ onClose }) {
               <InfoCard
                 icon={Mail}
                 label="Email"
-                value="premwaghmare88560@gmail.com"
+                value="shuprha1327@gmail.com"
                 delay={0.2}
               />
 
               <InfoCard
                 icon={Phone}
                 label="Phone"
-                value="+91 8856076018"
+                value="+91 8149826504"
                 delay={0.3}
               />
 

@@ -128,7 +128,7 @@ export default function Contact() {
                   </p>
 
                   <p className="font-medium text-lg">
-                    premwaghmare88560@gmail.com
+                    shuprha1327@gmail.com
                   </p>
                 </div>
 
@@ -147,7 +147,7 @@ export default function Contact() {
                   </p>
 
                   <p className="font-medium text-lg">
-                    +91 8856076018
+                    +91 8149826504
                   </p>
                 </div>
 

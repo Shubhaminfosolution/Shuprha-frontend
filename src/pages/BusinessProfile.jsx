@@ -24,6 +24,7 @@ const businessData = {
     ],
   },
 
+
   hysteresis: {
     name: "Hysteresis",
     category: "Education",
@@ -45,19 +46,20 @@ const businessData = {
     ],
   },
 
+
   "hindavi-swarajya": {
     name: "Hindavi Swarajya Tours & Travels",
     category: "Tours & Travel Solutions",
-  
+
     heroImage:
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop",
-  
+
     logo:
       "https://cdn-icons-png.flaticon.com/512/201/201623.png",
-  
+
     description:
       "Hindavi Swarajya Tours & Travels provides premium travel experiences with customized tour packages, comfortable transportation and reliable fleet solutions designed for memorable journeys.",
-  
+
     services: [
       "Customized Tour Packages",
       "Luxury Travel",
@@ -65,6 +67,7 @@ const businessData = {
       "Family & Group Tours",
     ],
   },
+
 
   "trimit-rachna": {
     name: "Trimit Rachna",
@@ -87,27 +90,80 @@ const businessData = {
     ],
   },
 
+
   "her-highnest": {
     name: "Her Highnest",
     category: "Women Housing Solutions",
-  
+
     heroImage:
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
-  
+
     logo:
       "https://cdn-icons-png.flaticon.com/512/3135/3135789.png",
-  
+
     description:
       "Her Highnest provides safe, comfortable and affordable housing solutions specially designed to empower women with secure living spaces.",
-  
+
     services: [
       "Women Property Consultant",
       "Secure Housing",
       "Women Empowerment",
-      ,
+    ],
+  },
+
+
+  /* --------------------------------
+     NEW BUSINESS — OSENTIA REALTY
+  -------------------------------- */
+
+  "osentia-realty": {
+    name: "Osentia Realty",
+    category: "Real Estate",
+
+    heroImage:
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop",
+
+    logo:
+      "https://cdn-icons-png.flaticon.com/512/69/69524.png",
+
+    description:
+      "Osentia Realty focuses on real estate solutions, helping individuals and businesses explore residential and commercial property opportunities.",
+
+    services: [
+      "Property Consulting",
+      "Residential Real Estate",
+      "Commercial Real Estate",
+      "Property Solutions",
+    ],
+  },
+
+
+  /* --------------------------------
+     NEW BUSINESS — FIXI SECURITY
+  -------------------------------- */
+
+  "fixi-security": {
+    name: "Fixi Security",
+    category: "Cyber Security",
+
+    heroImage:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1600&auto=format&fit=crop",
+
+    logo:
+      "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+
+    description:
+      "Fixi Security focuses on cybersecurity solutions designed to protect digital systems, sensitive information and online environments from security threats.",
+
+    services: [
+      "Cyber Security",
+      "Threat Protection",
+      "Data Security",
+      "Security Solutions",
     ],
   },
 };
+
 
 const BusinessProfile = () => {
   const { id } = useParams();
@@ -128,6 +184,7 @@ const BusinessProfile = () => {
     <div className="bg-black text-white min-h-screen overflow-hidden">
 
       {/* HERO SECTION */}
+
       <section className="relative h-screen">
 
         <img
@@ -141,6 +198,7 @@ const BusinessProfile = () => {
         <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-10 h-full flex flex-col justify-end pb-24">
 
           {/* LOGO */}
+
           <motion.img
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -149,7 +207,9 @@ const BusinessProfile = () => {
             className="w-24 h-24 object-cover rounded-2xl mb-8 bg-white p-3"
           />
 
+
           {/* CATEGORY */}
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -158,7 +218,9 @@ const BusinessProfile = () => {
             {business.category}
           </motion.p>
 
+
           {/* NAME */}
+
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -171,7 +233,9 @@ const BusinessProfile = () => {
 
       </section>
 
+
       {/* ABOUT SECTION */}
+
       <section className="px-6 md:px-10 py-32 border-b border-white/10">
 
         <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-20">
@@ -188,6 +252,7 @@ const BusinessProfile = () => {
 
           </div>
 
+
           <div>
 
             <p className="text-white/65 text-xl leading-relaxed">
@@ -200,7 +265,9 @@ const BusinessProfile = () => {
 
       </section>
 
+
       {/* SERVICES SECTION */}
+
       <section className="px-6 md:px-10 py-32">
 
         <div className="max-w-[1600px] mx-auto">
@@ -209,9 +276,11 @@ const BusinessProfile = () => {
             Services
           </p>
 
+
           <div className="grid md:grid-cols-2 gap-8">
 
             {business.services.map((service, index) => (
+
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 40 }}
@@ -225,6 +294,7 @@ const BusinessProfile = () => {
                 </h3>
 
               </motion.div>
+
             ))}
 
           </div>
@@ -233,7 +303,9 @@ const BusinessProfile = () => {
 
       </section>
 
+
       {/* CTA SECTION */}
+
       <section className="px-6 md:px-10 pb-32">
 
         <div className="max-w-[1600px] mx-auto rounded-[40px] border border-white/10 p-10 md:p-20 bg-white/[0.03]">
@@ -252,6 +324,7 @@ const BusinessProfile = () => {
 
             </div>
 
+
             <button
               onClick={() => setShowForm(true)}
               className="px-10 py-5 rounded-full bg-white text-black hover:scale-105 transition-all duration-300 uppercase tracking-[0.2em] text-sm"
@@ -265,13 +338,17 @@ const BusinessProfile = () => {
 
       </section>
 
+
       {/* ENQUIRY FORM MODAL */}
+
       {showForm && (
+
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
 
           <div className="w-full max-w-2xl rounded-[30px] border border-white/10 bg-[#0d0d0d] p-6 md:p-10 relative my-10">
 
             {/* CLOSE BUTTON */}
+
             <button
               onClick={() => setShowForm(false)}
               className="absolute top-5 right-5 text-white/50 hover:text-white text-3xl leading-none"
@@ -279,7 +356,9 @@ const BusinessProfile = () => {
               ×
             </button>
 
+
             {/* HEADING */}
+
             <div className="mb-8">
 
               <p className="uppercase tracking-[0.3em] text-white/40 text-xs mb-4">
@@ -292,10 +371,13 @@ const BusinessProfile = () => {
 
             </div>
 
+
             {/* FORM */}
+
             <form className="space-y-5">
 
               {/* NAME */}
+
               <div>
 
                 <label className="block text-sm text-white/60 mb-3">
@@ -310,7 +392,9 @@ const BusinessProfile = () => {
 
               </div>
 
+
               {/* PHONE */}
+
               <div>
 
                 <label className="block text-sm text-white/60 mb-3">
@@ -325,7 +409,9 @@ const BusinessProfile = () => {
 
               </div>
 
+
               {/* EMAIL */}
+
               <div>
 
                 <label className="block text-sm text-white/60 mb-3">
@@ -340,7 +426,9 @@ const BusinessProfile = () => {
 
               </div>
 
+
               {/* DESCRIPTION */}
+
               <div>
 
                 <label className="block text-sm text-white/60 mb-3">
@@ -355,7 +443,9 @@ const BusinessProfile = () => {
 
               </div>
 
+
               {/* CONTACT TIME */}
+
               <div>
 
                 <label className="block text-sm text-white/60 mb-3">
@@ -370,7 +460,9 @@ const BusinessProfile = () => {
 
               </div>
 
+
               {/* SUBMIT BUTTON */}
+
               <button
                 type="submit"
                 className="w-full py-4 rounded-2xl bg-white text-black font-semibold hover:scale-[1.01] transition-all duration-300 mt-4"
@@ -383,9 +475,12 @@ const BusinessProfile = () => {
           </div>
 
         </div>
+
       )}
 
+
       {/* BACK BUTTON */}
+
       <div className="px-6 md:px-10 pb-20">
 
         <Link
