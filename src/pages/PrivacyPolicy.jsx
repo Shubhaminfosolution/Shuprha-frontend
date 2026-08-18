@@ -370,14 +370,14 @@ const PrivacyPolicy = () => {
 
                 <ContactItem
                   label="Email"
-                  value="premwaghmare88560@gmail.com"
-                  href="mailto:premwaghmare88560@gmail.com"
+                  value="support@shuprha.com"
+                  href="mailto:support@shuprha.com"
                 />
 
                 <ContactItem
                   label="Phone"
-                  value="+91 8856076018"
-                  href="tel:+918856076018"
+                  value="+918149826504"
+                  href="tel:+918149826504"
                 />
 
               </div>

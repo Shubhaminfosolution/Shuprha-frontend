@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import CaseStudies from "./pages/CaseStudies";
 import ServicesPage from "./pages/ServicesPage";
 import WhyUs from "./pages/WhyUs";
 import ContactButton from "./pages/Contactbutton";
@@ -70,7 +70,10 @@ function App() {
               path="/branding"
               element={<Branding />}
             />
-
+<Route
+  path="/case-studies"
+  element={<CaseStudies />}
+/>
             <Route
               path="/social-media"
               element={<SocialMedia />}

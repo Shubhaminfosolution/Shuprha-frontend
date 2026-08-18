@@ -195,7 +195,7 @@ function ContactOverlay({ onClose }) {
               <InfoCard
                 icon={Mail}
                 label="Email"
-                value="shuprha1327@gmail.com"
+                value="support@shuprha.com"
                 delay={0.2}
               />
 

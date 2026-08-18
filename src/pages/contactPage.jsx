@@ -112,7 +112,7 @@ function ContactSection() {
                   </p>
 
                   <p className="font-medium">
-                    shuprha1327@gmail.com
+                    support@shuprha.com
                   </p>
                 </div>
               </div>
